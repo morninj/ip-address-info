@@ -2,7 +2,9 @@
 
 Get WHOIS information about an IP address.
 
-Use it to get information about a list of IP addresses contained in `iplist.txt`:
+Use it to get information about a list of IP addresses contained in `iplist.txt`.
+
+First, run `pip install ipwhois`. Then, run this script:
 
     $ python -W ignore ipinfo.py iplist.txt
 
