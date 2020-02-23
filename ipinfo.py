@@ -38,18 +38,18 @@ def main():
     i = 0
     for address in lines:
         i = i + 1
-        print '--'
-        print 'Processing IP address ' + str(i) + ' of ' + str(len(lines))
+        print('--')
+        print('Processing IP address ' + str(i) + ' of ' + str(len(lines)))
         try:
             result = get_ip_info(address)
-            print address
-            print result['name']
+            print(address)
+            print(result['name'])
         except Exception as e:
-            print '**Error**'
-            print e
+            print('**Error**')
+            print(e)
     # Print stats
-    print '-' * 80
-    print 'Total IP addresses processed: ' + str(len(lines))
+    print('-' * 80)
+    print('Total IP addresses processed: ' + str(len(lines)))
 
 if __name__ == '__main__':
     main()
